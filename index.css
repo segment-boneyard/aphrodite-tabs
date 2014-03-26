@@ -1,0 +1,28 @@
+.Tabs {
+  border-bottom: 1px solid #F5ECDC;
+  padding: 0 35px; /* This probably doesn't belong here */
+}
+
+.Tab {
+  display: inline-block;
+  font-size: 0; /* Remove spacing between inline-block elements */
+}
+
+.Tab a {
+  display: block;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(darker-sand);
+  letter-spacing: 0.5px;
+  padding: 0 15px;
+}
+
+.Tab:hover {
+  color: var(darkest-sand);
+}
+
+.Tab.active {
+  box-shadow: 0 -3px 0 var(green) inset, 0 1px 0 var(green);
+  color: var(darkest-sand);
+}
