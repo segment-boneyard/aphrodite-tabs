@@ -6,23 +6,31 @@
 .Tab {
   display: inline-block;
   font-size: 0; /* Remove spacing between inline-block elements */
+  margin: 0 10px;
+}
+
+.Tab.hidden {
+  display: none;
 }
 
 .Tab a {
   display: block;
-  line-height: 70px;
   text-transform: uppercase;
-  font-size: 15px;
-  color: var(darker-sand);
+  font-size: 14px;
   letter-spacing: 0.5px;
-  padding: 0 15px;
+  font-weight: 500;
+  padding: 1.5em 0;
+  color: var(lightest-black);
+  transition: all .3s;
+  white-space: nowrap;
 }
 
-.Tab:hover {
-  color: var(darkest-sand);
+.Tab:hover a {
+  color: var(black);
+  box-shadow: inset 0 -3px var(sand), 0 1px var(sand);
 }
 
-.Tab.active {
+.Tab.active a {
+  color: var(black);
   box-shadow: 0 -3px 0 var(green) inset, 0 1px 0 var(green);
-  color: var(darkest-sand);
 }
