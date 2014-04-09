@@ -6,7 +6,7 @@
 .Tab {
   display: inline-block;
   font-size: 0; /* Remove spacing between inline-block elements */
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .Tab.hidden {
