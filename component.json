@@ -1,4 +1,5 @@
 {
   "name": "aphrodite-tabs",
+  "version": "0.1.0",
   "styles": ["index.css"]
 }
